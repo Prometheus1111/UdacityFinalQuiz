@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="MainActivity">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:src="@drawable/solar_system"/>
+
+        <EditText
+            android:id="@+id/inputName_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter your name"
+            android:inputType="textCapWords"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#B71C1C"
+            android:text="This quiz will test your knowledge of our Solar System"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="1. What is the closest planet to the Sun?" />
+
+        <CheckBox
+            android:id="@+id/q1_wrongCheckB1"
+            style="@style/answers"
+            android:text="Earth"/>
+
+        <CheckBox
+            android:id="@+id/q1_wrongCheckB2"
+            style="@style/answers"
+            android:text="Jupiter" />
+
+        <CheckBox
+            android:id="@+id/q1_correctCheckB"
+            style="@style/answers"
+            android:text="Mercury" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="2. The sun is a giant planet." />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question2_wrongRButton"
+                style="@style/answers"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/question2_correctRButton"
+                style="@style/answers"
+                android:text="False" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="3. What planet is famous for the beautiful rings that surrounds it?" />
+
+        <CheckBox
+            android:id="@+id/q3_wrongCheckB1"
+            style="@style/answers"
+            android:text="Pluto" />
+
+        <CheckBox android:id="@+id/q3_wrongCheckB2"
+            style="@style/answers"
+            android:text="Uranus" />
+
+        <CheckBox
+            android:id="@+id/q3_correctCheckB"
+            style="@style/answers"
+            android:text="Saturn" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="4. What planet is famous for its big red spot on it?" />
+
+        <CheckBox
+            android:id="@+id/q4_wrongCheckB1"
+            style="@style/answers"
+            android:text="Red Dwarf" />
+
+        <CheckBox android:id="@+id/q4_correctCheckB"
+            style="@style/answers"
+            android:text="Jupiter" />
+
+        <CheckBox
+            android:id="@+id/q4_wrongCheckB2"
+            style="@style/answers"
+            android:text="Saturn" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="5. Humans have only set foot once on Mars." />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question5_wrongRButton"
+                style="@style/answers"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/question5_correctRButton"
+                style="@style/answers"
+                android:text="False" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="6. What is the name of the force holding us to the Earth?" />
+
+        <CheckBox
+            android:id="@+id/q6_wrongCheckB1"
+            style="@style/answers"
+            android:text="The Crazy Glue force" />
+
+        <CheckBox android:id="@+id/q6_wrongCheckB2"
+            style="@style/answers"
+            android:text="Chemical Bond" />
+
+        <CheckBox
+            android:id="@+id/q6_correctCheckB"
+            style="@style/answers"
+            android:text="Gravity" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="7. Earth is located in Milky Way Galaxy" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/question7_correctRButton"
+                style="@style/answers"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/question7_wrongRButton"
+                style="@style/answers"
+                android:text="False" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:src="@drawable/saturn"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="8. Name the planet in the above image." />
+
+        <EditText
+            android:id="@+id/question8Input_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter your answer here"
+            android:inputType="text"
+            android:imeOptions="actionDone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="9. Which planet is the biggest planet in the solar system?" />
+
+        <CheckBox
+            android:id="@+id/q9_wrongCheckB1"
+            style="@style/answers"
+            android:text="Sun" />
+
+        <CheckBox android:id="@+id/q9_wrongCheckB2"
+            style="@style/answers"
+            android:text="Pluto" />
+
+        <CheckBox
+            android:id="@+id/q9_correctCheckB"
+            style="@style/answers"
+            android:text="Jupiter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <TextView
+            style="@style/questions"
+            android:text="10. Earth . . . (Check all that applies)" />
+
+        <CheckBox
+            android:id="@+id/q10_correctCheckB1"
+            style="@style/answers"
+            android:text="Takes about 365 days to orbit the sun " />
+
+        <CheckBox android:id="@+id/q10_wrongCheckB"
+            style="@style/answers"
+            android:text="Revolves around its own axis once every month" />
+
+        <CheckBox
+            android:id="@+id/q10_correctCheckB2"
+            style="@style/answers"
+            android:text="Has an atmosphere" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="submitOnClick"
+            android:text="Submit Quiz" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="resetOnClick"
+            android:text="Reset Quiz" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#B71C1C"
+            android:text="Quiz Results"/>
+
+        <TextView
+            android:id="@+id/scoreResult_TView"
+            style="@style/questions"
+            android:layout_gravity="center_horizontal"
+            android:text=" " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#212121"/>
+
+    </LinearLayout>
+</ScrollView>
